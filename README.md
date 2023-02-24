@@ -1,1 +1,0 @@
-# azurehub-gay-script
