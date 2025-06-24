@@ -1,6 +1,6 @@
-local keys = {
+_G.keys = {
   '123',
   'abs',
   'admin'
 }
-return keys
+return _G.keys
