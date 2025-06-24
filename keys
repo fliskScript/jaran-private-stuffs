@@ -1,6 +1,5 @@
-_G.keys = {
+return {
   '123',
   'abs',
   'admin'
 }
-return _G.keys
