@@ -1888,6 +1888,7 @@ function library:toggle(properties)
 		name = properties.name or "Toggle",
 		flag = properties.flag or tostring(math.random(1, 9999999)),
 		callback = properties.callback or function() end,
+		risky = properties.risky or false,
 		default = properties.default or false,
 		previous_holder = self,
 	}
@@ -1897,7 +1898,7 @@ function library:toggle(properties)
 		Parent = self.holder,
 		Name = "",
 		FontFace = library.font,
-		TextColor3 = Color3.fromRGB(170, 170, 170),
+		TextColor3 = cfg.risky and Color3.fromRGB(198, 227, 54) or Color3.fromRGB(170, 170, 170),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		Text = cfg.name,
 		TextStrokeTransparency = 0.5,
